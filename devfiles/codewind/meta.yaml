@@ -1,6 +1,6 @@
 ---
-displayName: NodeJS Angular Web Application
-description: Stack for developing NodeJS Angular Web Application
-tags: ["NodeJS", "Angular", "Alpine"]
-icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+displayName: Codewind
+description: Create a Codewind ready workspace
+tags: []
+icon: https://raw.githubusercontent.com/eclipse/codewind-docs/master/docs/images/logo.svg
 globalMemoryLimit: 2686Mi

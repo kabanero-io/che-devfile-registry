@@ -10,8 +10,8 @@
 
 set -e
 
-REGISTRY="quay.io"
-ORGANIZATION="eclipse"
+REGISTRY="docker.io"
+ORGANIZATION="kabanero"
 TAG="nightly"
 TARGET="registry"
 DOCKERFILE="./build/dockerfiles/Dockerfile"
@@ -24,9 +24,9 @@ Options:
     --tag, -t [TAG]
         Docker image tag to be used for image; default: 'nightly'
     --registry, -r [REGISTRY]
-        Docker registry to be used for image; default 'quay.io'
+        Docker registry to be used for image; default 'docker.io'
     --organization, -o [ORGANIZATION]
-        Docker image organization to be used for image; default: 'eclipse'
+        Docker image organization to be used for image; default: 'kabanero'
     --offline
         Build offline version of registry, with all sample projects
         cached in the registry; disabled by default.
