@@ -14,7 +14,7 @@ build-image:
 	./build.sh
 
 push-image:
-ifneq "$(IMAGE)" "che-devfile-registry:nightly"
+ifneq "$(IMAGE)" "kabanero/che-devfile-registry:nightly"
 	# Default push
 	docker push $(IMAGE)
 endif
