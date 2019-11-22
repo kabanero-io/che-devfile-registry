@@ -1,0 +1,25 @@
+language: java
+sudo: false
+
+services:
+  - docker
+
+before_install:
+- if [ ! -z \"$DOCKER_USERNAME\" ]; then docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD || true; fi
+
+script:
+- make build build-image
+
+# push for git tagged release
+deploy:
+- provider: script
+  script: make push-image
+  on:
+     tags: true
+     condition: ${DOCKER_USERNAME} && ${DOCKER_PASSWORD}
+- provider: script
+  script: make push-image
+  on:
+# branch named "latest" in my private fork
+     branch: latest
+     condition: ${DOCKER_USERNAME} && ${DOCKER_PASSWORD}
