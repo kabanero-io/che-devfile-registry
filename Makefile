@@ -24,5 +24,6 @@ ifdef TRAVIS_TAG
 	# This is a Travis tag build. Pushing using Docker tag TRAVIS_TAG
 	docker tag $(IMAGE) $(REPOSITORY):$(TRAVIS_TAG)
 	docker push $(REPOSITORY):$(TRAVIS_TAG)
+	docker tag $(IMAGE) $(REPOSITORY):latest
 	docker push $(REPOSITORY):latest
 endif
