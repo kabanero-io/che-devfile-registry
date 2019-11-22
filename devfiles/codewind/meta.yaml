@@ -2,5 +2,5 @@
 displayName: Codewind
 description: Create a Codewind ready workspace
 tags: []
-icon: https://raw.githubusercontent.com/eclipse/codewind-docs/master/docs/images/logo.svg
+icon: https://www.eclipse.org/codewind/images/logo.png
 globalMemoryLimit: 2686Mi
