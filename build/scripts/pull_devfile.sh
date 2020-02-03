@@ -5,7 +5,7 @@ set -e
 BRANCH=${1:-master}
 VERSION=${1:-latest}
 
-DEVFILE=https://raw.githubusercontent.com/eclipse/codewind-che-plugin/$BRANCH/devfiles/$VERSION/devfile.yaml
+DEVFILE=https://raw.githubusercontent.com/eclipse/codewind-che-plugin/$BRANCH/devfiles/$VERSION/devfile_nolsp.yaml
 
 echo "Pulling down $DEVFILE"
 
