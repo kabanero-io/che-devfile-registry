@@ -8,10 +8,10 @@ REPOSITORY=$(firstword $(subst :, ,${IMAGE}))
 .PHONY: build build-image push-image
 
 build:
-	./build/scripts/pull_devfile.sh $(TRAVIS_TAG)
+	./build/scripts/pull_devfile.sh 0.14.1
 
 build-image:
-	./build.sh
+	./build.sh --rhel
 
 push-image:
 ifneq "$(IMAGE)" "kabanero/che-devfile-registry:nightly"
